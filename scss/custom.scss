@@ -413,7 +413,8 @@ $slider-width: 2.5rem;
     div {
         @extend .p-0;
         @extend .m-0;
-        @extend .pb-4;
+        @extend .mb-4;
+        @extend .justify-content-evenly;
     }
 
     div:last-child {
