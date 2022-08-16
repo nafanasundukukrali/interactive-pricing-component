@@ -5,35 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Interactive pricing component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+  <div class="container">
+    <div class="logo-img-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" preserveAspectRatio='none' class="logo-img-content">
+        <g fill="none" fill-rule="evenodd" stroke="#CFD8EF">
+          <circle cx="63" cy="82" r="62.5"/>
+          <circle cx="105" cy="41" r="40.5"/>
+        </g>
+      </svg>
+    </div>
+    <div class="row">
+      <h1>Simple, traffic-based pricing</h1>
+    </div>
+    <div class="row">
+      <h2>Sign-up for our 30-day trial. <br id="br-h2">No card required.</h2>
+    </div>
+  </div>
 
-  Pageviews
-  $ /month
+  <div class="container">
+      <div class="row">
+        <p class="pageviews-count">100K Pageviews</p>
+        <span class="col-4" data-type="price-value">$16.00</span>
+        <p class="col-2">/ month</p>
+      </div>
 
-  Monthly Billing
-  Yearly Billing 25% discount
+      <div class="row">
+        <input type="range" name="pageviews-range" class="form-range" min="0" max="400" step="1" value="200">
+      </div>
 
-  Unlimited websites
-  100% data ownership
-  Email reports
+      <div class="row billing-statement">
+        <div class="col-3">
+          <p>Monthly Billing</p>
+        </div>
+        <div class="col-6 form-check form-switch">
+          <input type="checkbox" name="monthly-billing-checkbox" class="form-check-input">
+          <label class="form-check-label">Yearly Billing</label>
+        </div>
+        <div class="col-3">
+          <span>25%</span>
+          <span>discount</span>
+        </div>
+      </div>
 
-  Start my trial
+      <div class="row button-and-list">
+        <div class="col-6">
+          <ul id="conditions">
+            <li>Unlimited websites</li>
+            <li>100% data ownership</li>
+            <li>Email reports</li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <button type="button" class="btn btn-primary btn-lg">Start my trial</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
   
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by&nbsp;<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by&nbsp;<a href="https://github.com/nafanasundukukrali">@nafanasundukukrali</a>.
   </div>
+
+  <link rel="stylesheet" href="css/custom.min.css">
+  <script src="js/index.js"></script>
 </body>
 </html>
